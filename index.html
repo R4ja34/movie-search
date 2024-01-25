@@ -3,19 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
   <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>Movie Search</h1>
-        <form id="search-form">
-            <input type="text" id="search-input" placeholder="Rechercher un film...">
-            <button type="submit">Rechercher</button>
-        </form>
+      <h1>Movie Search</h1>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Rechercher un film...">
+        <button type="submit">Rechercher</button>
+      </form>
     </header>
+      <main id="movie-container"></main>
+      <div id="movieModal" class="modal">
+        <div class="modal-content">
+          <span class="close-button" id="closeModal">&times;</span>
+          <div id="modalPoster"></div>
+          <div id="modalDetails">
+            <h2 id="modalTitle"></h2>
+            <p id="modalYear"></p>
+            <p id="modalDirector"></p>
+            <p id="modalActors"></p>
+            <p id="modalPlot"></p>
+          </div>
 
-    <main id="results-container"></main>
-
-    <script type="module" src="script.js"></script>
+          <!-- Ajoutez d'autres éléments pour afficher d'autres détails -->
+        </div>
+      </div>
+    <script type="module" src="script2.js"></script>
 </body>
 </html>
