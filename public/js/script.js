@@ -1,4 +1,4 @@
-import apiKeys from './apikeys.js';
+import apiKeys from '../../apikeys.js';
 
 const apiKey = apiKeys.omdb;
 const searchMovie = document.getElementById('search-form');

@@ -1,6 +1,6 @@
 /* Ajoutez ces styles à votre fichier CSS */
 body {
-  background-image: url("image/background2.jpg");
+  background-image: url("/image/background2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
